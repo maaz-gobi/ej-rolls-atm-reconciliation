@@ -15,7 +15,18 @@ EJ Rolls is an ATM reconciliation tool for banking operations teams. It parses E
 
 A look at the EJ Rolls reconciliation workflow.
 
-> Screenshots coming soon — the tool exposes three primary screens: **Upload**, **Reconciliation Preview**, and **Status / Download**.
+| Upload — EJ + GL files, folder, or ZIP | Status — EJ uploaded, waiting for GL |
+|:---:|:---:|
+| [![EJ Rolls upload screen — drag-and-drop ATM Electronic Journal logs and GL statements for automated reconciliation](screenshots/upload.png)](screenshots/upload.png) | [![EJ Rolls status page after uploading EJ files only — prompts for the matching GL statement to run reconciliation](screenshots/status-needs-gl.png)](screenshots/status-needs-gl.png) |
+
+| Reconciliation — matched / unmatched summary | Preview — row-level matching detail |
+|:---:|:---:|
+| [![EJ Rolls reconciliation summary — total rows, matched, unmatched, EJ-only and GL-only counts with download buttons](screenshots/status-reconciled.png)](screenshots/status-reconciled.png) | [![EJ Rolls in-browser preview — STAN, ATM, date, time, PAN, transaction, amounts, EJ status, match status with reasons](screenshots/preview.png)](screenshots/preview.png) |
+
+- **Upload** — drag-and-drop or folder pick; the tool auto-routes EJ logs, GL statements, and ZIPs.
+- **Status (waiting for GL)** — EJ files identified, record count shown, prompt to add the matching GL.
+- **Reconciliation summary** — total / matched / unmatched / EJ-only / GL-only counts, with one-click downloads for the full and unmatched-only workbooks.
+- **Preview** — in-browser row-by-row reconciliation table with STAN, amounts (EJ + GL side-by-side), status, match outcome, and the reason a row didn't match.
 
 ---
 
